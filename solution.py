@@ -19,5 +19,4 @@ def solution(x_success: int,
     z = (control_conversion - test_conversion)/se
     #находим критическое значение z-статистики
     critical_value = norm.ppf(1 - alpha/2)
-    #отклоняем нулевую гипотезу, если pval < уровня значимости (то есть pval < alpha => True)
     return abs(z) > critical_value
